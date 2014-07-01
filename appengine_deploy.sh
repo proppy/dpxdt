@@ -9,4 +9,5 @@ python -c \
         './deployment/appengine/templates_compiled.zip')"
 
 echo "Starting deployment"
-appcfg.py update ./deployment/appengine
+gcloud --project proppy-dpxdt preview app deploy deployment/appengine --docker-host=tcp://localhost:4243 --server preview.appengine.google.com
+#appcfg.py update ./deployment/appengine

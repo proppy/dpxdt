@@ -18,12 +18,12 @@
 from secrets import *
 
 SQLALCHEMY_DATABASE_URI = (
-    'mysql+mysqldb://root:toor@173.194.253.196/test')
-#    'mysql+gaerdbms:///test?instance=proppy-dpxdt:dev')
+#    'mysql+mysqldb://root:toor@173.194.253.196/test')
+    'mysql+gaerdbms:///test?instance=proppy-dpxdt:dev')
 
 GOOGLE_OAUTH2_EMAIL_ADDRESS = '489570101792-de2remple7eqsirdhnutfrol90toiim3@developer.gserviceaccount.com'
 GOOGLE_OAUTH2_REDIRECT_PATH = '/oauth2callback'
-GOOGLE_OAUTH2_REDIRECT_URI = 'http://proppy.sfo.corp.google.com:8080' + GOOGLE_OAUTH2_REDIRECT_PATH
+GOOGLE_OAUTH2_REDIRECT_URI = 'https://proppy-dpxdt.appspot.com' + GOOGLE_OAUTH2_REDIRECT_PATH
 GOOGLE_OAUTH2_CLIENT_ID = '489570101792-de2remple7eqsirdhnutfrol90toiim3.apps.googleusercontent.com'
 GOOGLE_OAUTH2_CLIENT_SECRET = 'YGSgNk_-cbvS11NnjDLLiuWm'
 
