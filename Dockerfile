@@ -4,5 +4,4 @@ RUN mkdir /phantomjs && curl -L https://bitbucket.org/ariya/phantomjs/downloads/
 ENV PATH $PATH:/phantomjs/bin:/app
 WORKDIR /app
 ADD . /app
-RUN echo 'server.db.create_all()' | /app/run_shell.sh 
-ENTRYPOINT ["/app/run_combined.sh"]
+ENTRYPOINT ["/app/run_worker.sh"]

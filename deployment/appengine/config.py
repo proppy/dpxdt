@@ -18,15 +18,16 @@
 from secrets import *
 
 SQLALCHEMY_DATABASE_URI = (
-    'mysql+gaerdbms:///test?instance=foo:bar')
+    'mysql+mysqldb://root:toor@173.194.253.196/test')
+#    'mysql+gaerdbms:///test?instance=proppy-dpxdt:dev')
 
-GOOGLE_OAUTH2_EMAIL_ADDRESS = '918724168220-nqq27o7so1p7stukds23oo2vof5gkfmh@developer.gserviceaccount.com'
+GOOGLE_OAUTH2_EMAIL_ADDRESS = '489570101792-de2remple7eqsirdhnutfrol90toiim3@developer.gserviceaccount.com'
 GOOGLE_OAUTH2_REDIRECT_PATH = '/oauth2callback'
-GOOGLE_OAUTH2_REDIRECT_URI = 'http://localhost:5000' + GOOGLE_OAUTH2_REDIRECT_PATH
-GOOGLE_OAUTH2_CLIENT_ID = '918724168220-nqq27o7so1p7stukds23oo2vof5gkfmh.apps.googleusercontent.com'
-GOOGLE_OAUTH2_CLIENT_SECRET = 'EhiCP-PuQYN0OsWGAELTUHyl'
+GOOGLE_OAUTH2_REDIRECT_URI = 'http://proppy.sfo.corp.google.com:8080' + GOOGLE_OAUTH2_REDIRECT_PATH
+GOOGLE_OAUTH2_CLIENT_ID = '489570101792-de2remple7eqsirdhnutfrol90toiim3.apps.googleusercontent.com'
+GOOGLE_OAUTH2_CLIENT_SECRET = 'YGSgNk_-cbvS11NnjDLLiuWm'
 
-GOOGLE_CLOUD_STORAGE_BUCKET = 'fake-bucket-name-here/artifacts'
+GOOGLE_CLOUD_STORAGE_BUCKET = 'proppy-dpxdt/artifacts'
 
 CACHE_TYPE = 'memcached'
 CACHE_DEFAULT_TIMEOUT = 600
